@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Selector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h2 id="headingss">Select your MOOD</h2>
+  <form class="radio-row">
+    <input type="radio" id="happy" name="mood" 
+           data-color="#ffe066" 
+           data-thought="Spread sunshine wherever you go!" 
+           data-video="ZbZSe6N_BXs">
+    <label for="happy"><img src="happy.jpg" alt="Happy"></label>
+
+    <input type="radio" id="sad" name="mood" 
+           data-color="#5dade2" 
+           data-thought="It's okay to feel blue. Let it flow." 
+           data-video="tAGnKpE4NCI">
+    <label for="sad"><img src="sad.png" alt="Sad"></label>
+
+    <input type="radio" id="angry" name="mood" 
+           data-color="#e74c3c" 
+           data-thought="Breathe deep. You are in control." 
+           data-video="vCadcBR95oU">
+    <label for="angry"><img src="angry.jpg" alt="Angry"></label>
+
+    <input type="radio" id="calm" name="mood" 
+           data-color="#2ecc71" 
+           data-thought="Peace begins with a deep breath." 
+           data-video="2OEL4P1Rz04">
+    <label for="calm"><img src="calm.jpg" alt="Calm"></label>
+
+    <input type="radio" id="sleepy" name="mood" 
+           data-color="#a29bfe" 
+           data-thought="Close your eyes and drift away..." 
+           data-video="DWcJFNfaw9c">
+    <label for="sleepy"><img src="sleepy.jpg" alt="Sleepy"></label>
+  </form>
+
+  <div id="thought"></div>
+  <div id="player"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

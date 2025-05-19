@@ -1,0 +1,73 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: purple;
+}
+#headingss
+{
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : white;
+    margin: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+
+.radio-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+label {
+  cursor: pointer;
+}
+
+label img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+input[type="radio"]:checked + label img {
+  border-color: blue;
+  box-shadow: 0 0 6px rgba(0, 0, 255, 0.5);
+}
+
+
+#thought {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 20px;
+  min-height: 1.5em;
+  max-width: 600px;
+}
+
+
+#player {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
